@@ -6,3 +6,4 @@ db.sqlite3
 static_cdn/
 media_cdn/
 db.sqlite3
+settings.ini
