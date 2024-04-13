@@ -65,3 +65,24 @@ ul{
     background-color: var(--yello);
     border-color: var(--yello);
 }
+
+
+/*BLOG SECTION*/
+.blog-date{
+    width:80px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--yello);
+    color: var(--black);
+    margin-left: 0;
+    margin-right: 3px;
+}
+.blog-date strong{
+    font-size: small;
+    font-weight: bolder;
+}
+
+/*FOOTER SECTION*/
+footer{
+    border-top: .5px solid var(--grey);
+}
