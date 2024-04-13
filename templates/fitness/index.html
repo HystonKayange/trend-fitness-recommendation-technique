@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    body{
+        background: url('{% static "img/5.jpeg"%}');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--black);
+    }
+</style>
+
+<section class="mt-5 mb-5 container">
+    <div class="d-grid text-center justify-content-center align-items-center text-light">
+        <h1 >Welcome to TrendFitness</h1>
+        <p class="fs-4">
+            Trend Fitness is a web application dedicated to providing professional fitness advice which will include a range from fitness plans to diet plans catered to every individual needs.
+            Embark on a transformative journey towards a healthier lifestyle. Discover personalized training programs designed to meet their unique fitness needs.
+        </p>
+        <button class="btn btn-danger col-3 align-items-center justify-content-center fw-bold fs-4 mx-auto">Get Started</button>
+    </div>
+</section>
+{% endblock %}

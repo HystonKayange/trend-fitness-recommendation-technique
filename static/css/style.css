@@ -1,6 +1,7 @@
 :root{
     --black: black;
     --yello: yellow;
+    --yello-hover:rgb(116, 116, 17);
     --white: white;
     --grey: rgb(204, 200, 200);
 }
@@ -37,19 +38,29 @@ ul{
     background: none;
 
 }
-.bg-yellow{
+.btn-danger{
+    outline: none;
+    border: none;
+    color: var(--black);
+}
+.btn-danger:hover{
+    color: var(--black);
+    background-color: var(--yello-hover);
+    border-color: var(--yello-hover);
+}
+.bg-yellow, .btn-danger{
     background-color: var(--yello) !important;
 }
 .btn-outline-danger {
     color: var(--yello);
     border-color: var(--yello);
 }
-.btn-outline-danger:hover {
+.btn-outline-danger:hover{
     color: var(--black);
     background-color: var(--yello);
     border-color: var(--yello);
 }
-.btn-outline-danger:not(:disabled):not(.disabled).active, .btn-outline-danger:not(:disabled):not(.disabled):active, .show>.btn-outline-danger.dropdown-toggle {
+.btn-outline-danger:not(:disabled):not(.disabled).active, .btn-outline-danger:not(:disabled):not(.disabled):active, .show>.btn-outline-danger.dropdown-toggle, .btn-danger:active {
     color: var(--yello);
     background-color: var(--yello);
     border-color: var(--yello);
