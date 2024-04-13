@@ -1,0 +1,56 @@
+:root{
+    --black: black;
+    --yello: yellow;
+    --white: white;
+    --grey: rgb(204, 200, 200);
+}
+
+a{
+    color: var(--yello);
+}
+a:hover{
+    color: var(--grey);
+}
+
+body{
+    overflow-x: hidden;
+}
+
+nav, footer{
+    background-color: var(--black);
+    color: var(--yello);
+}
+ul{
+    list-style-type: none;
+}
+.navbar-dark {
+    background-color: #343a4000;
+    /* border-color: #4b545c; */
+    --bs-navbar-toggler-border-color: none !important;
+}
+/*AUTHENTICATION*/
+.login-box, .card{
+    background: var(--black) !important;
+    color: var(--yello);
+}
+.form-control:focus{
+    background: none;
+
+}
+.bg-yellow{
+    background-color: var(--yello) !important;
+}
+.btn-outline-danger {
+    color: var(--yello);
+    border-color: var(--yello);
+}
+.btn-outline-danger:hover {
+    color: var(--black);
+    background-color: var(--yello);
+    border-color: var(--yello);
+}
+.btn-outline-danger:not(:disabled):not(.disabled).active, .btn-outline-danger:not(:disabled):not(.disabled):active, .show>.btn-outline-danger.dropdown-toggle {
+    color: var(--yello);
+    background-color: var(--yello);
+    border-color: var(--yello);
+}

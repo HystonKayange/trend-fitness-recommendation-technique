@@ -1,0 +1,29 @@
+<style>
+    .alert-error{
+        background-color: #d86e79;
+        color: #442428;
+    }
+</style>
+
+<div id="msg">
+    {% if messages %}
+    <div class="container" class="mt-5">
+    <div>
+        {% for message in messages %}
+        <div class="d-flex justify-content-center text-center alert alert-{{message.tags}} m-2" role="alert">
+            <p class="fw-bold fs-4 mb-0 mx-2">{{message.tags | title}}!</p>
+            <p class="fs-4 mb-0">{{message}}</p>
+        </div>
+        {% endfor %}
+    </div>
+    </div>
+    {% endif %}
+</div>
+
+<script>
+    setTimeout(function(){
+        if ($('#msg').length > 0){
+            $('#msg').remove();
+        }
+    }, 5000)
+</script>

@@ -1,0 +1,116 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+{% load static %}
+{% load account socialaccount %}
+
+{% block head_title %}{% trans "Sign up" %}{% endblock %}
+
+{% block content %}
+<style>
+    body{
+        background: url('{% static "img/4.jpeg"%}');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--black);
+    }
+</style>
+
+<div class="login-box mt-5 mb-3">
+
+  <div class="card">
+    
+    <div class="mb-3 text-center">
+      <div class="mt-4">
+        <h3 class="fw-bold fs-h2 navy-blue">Sign up</h3>
+      </div>
+    </div>
+    <div class="card-body">
+          
+  <p class="login-box-msg">Register today to get started and enjoy more of our service</p>
+  <form method="post" enctype="multipart/form-data"  novalidate="" class="needs-validation" id="form-signup">{% csrf_token %}
+
+    <p class="form-text error-text text-danger">
+      {{ form.non_field_errors.as_text }}
+    </p>
+    
+      
+      <div class="input-group mb-3">
+          <input name="email" type="email" class="form-control bg-yellow" placeholder="Email" required="" value="">
+          <div class="input-group-append">
+              <div class="input-group-text">
+                  <span class="fas fa-user"></span>
+              </div>
+          </div>
+          <p class="form-text error-text text-danger invalid-feedback d-block">
+            {{ form.email.errors.as_text }}
+          </p> 
+          <div class="invalid-feedback">
+            Valid Email Address is required
+          </div>
+
+      </div>
+
+      <div class="input-group mb-3">
+        <input name="username" type="text" class="form-control bg-yellow" placeholder="Username" required="" value="">
+        <div class="input-group-append">
+            <div class="input-group-text">
+                <span class="fas fa-user-tie"></span>
+            </div>
+        </div>
+        <p class="form-text error-text text-danger invalid-feedback d-block">
+          {{ form.username.errors.as_text }}
+        </p> 
+        <div class="invalid-feedback">
+          Valid Username is required
+        </div>
+
+    </div>
+
+
+      <div class="input-group mb-3">
+          <input name="password1" type="password" class="form-control bg-yellow" placeholder="Password" required="" value="">
+          <div class="input-group-append">
+              <div class="input-group-text">
+                  <span class="fas fa-lock"></span>
+              </div>
+          </div>
+          <p class="form-text error-text text-danger invalid-feedback d-block">
+            {{ form.password1.errors.as_text }}
+          </p> 
+          <div class="invalid-feedback">
+            Password is required
+          </div>
+      </div>
+      
+
+      <div class="input-group mb-3">
+        <input name="password2" type="password" class="form-control bg-yellow" placeholder="Confirm Password" required="" value="">
+        <div class="input-group-append">
+            <div class="input-group-text">
+                <span class="fas fa-lock"></span>
+            </div>
+        </div>
+        <p class="form-text error-text text-danger invalid-feedback d-block">
+          {{ form.password2.errors.as_text }}
+        </p> 
+        <div class="invalid-feedback">
+          input the password again
+        </div>
+    </div>
+      
+      <div class="row">
+          <div class="col-12">
+              <button type="submit" class="btn btn-outline-danger btn-block">
+                  sign up
+              </button>
+          </div>
+      </div>
+  </form>
+
+      </div>
+  </div>
+</div>
+
+<script src="{% static 'js/form-validation.js' %}"></script>
+{% endblock %}

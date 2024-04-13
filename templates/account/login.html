@@ -1,0 +1,88 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+{% load static %}
+{% load account socialaccount %}
+
+{% block head_title %}{% trans "Log in" %}{% endblock %}
+
+{% block content %}
+<style>
+    body{
+        background: url('{% static "img/1.jpeg"%}');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--black);
+    }
+</style>
+
+<div class="login-box mt-5 mb-3">
+
+  <div class="card">
+    
+    <div class="mb-3 text-center">
+      <div class="mt-4">
+        <h3 class="fw-bold fs-h2 navy-blue">Login</h3>
+      </div>
+    </div>
+    <div class="card-body">
+          
+  <p class="login-box-msg">Login to continue enjoying our quality service</p>
+  <form method="post" enctype="multipart/form-data"  novalidate="" class="needs-validation" id="form-signin"> {% csrf_token %}
+    {% if redirect_field_value %}
+    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+    {% endif %}
+
+    <p class="form-text error-text text-danger">
+      {{ form.non_field_errors.as_text }}
+    </p>        
+      
+      <div class="input-group mb-3">
+          <input type="email" name="login" class="form-control bg-yellow" placeholder="Email" required="">
+          <div class="input-group-append">
+              <div class="input-group-text">
+                  <span class="fas fa-user"></span>
+              </div>
+          </div>
+          <div class="invalid-feedback d-block form-text error-text text-danger">
+            {{ form.login.errors.as_text }}
+          </div>
+          <div class="invalid-feedback">
+            Valid Email Address is required
+          </div>
+
+      </div>
+      <div class="input-group mb-3">
+          <input type="password" name="password" class="form-control bg-yellow" placeholder="Password" required="">
+          <div class="input-group-append">
+              <div class="input-group-text">
+                  <span class="fas fa-lock"></span>
+              </div>
+          </div>
+          <div class="d-block invalid-feedback form-text error-text text-danger">
+            {{ form.password.errors.as_text }}
+          </div> 
+          <div class="invalid-feedback">
+            Password is required
+          </div>
+      </div>
+      
+      
+      <div class="row justify-content-center">
+          <div class="col-3">
+              <button type="submit" class="btn btn-outline-danger fw-bolder btn-block">
+                  Login
+              </button>
+          </div>
+      </div>
+  </form>
+
+      </div>
+  </div>
+</div>
+
+<script src="{% static 'js/form-validation.js' %}"></script>
+<script>
+
+</script>
+{% endblock %}

@@ -1,0 +1,62 @@
+<div class="modal navbar-collapse collapse d-md-none" id="nav-menu" tabindex="-1" aria-labelledby="nav-menu" aria-modal="true" role="dialog">
+	<div class="modal-dialog modal-fullscreen" style="height:100vh; width:70vw; color:var(--yello);">
+		<div class="modal-content" style="background-color: var(--black)">
+			
+				<div class="modal-body">
+					<div id="sidebarMenu" class="">
+						<div class="nav_head ms-auto">
+							<ul class="me-auto mb-2 mb-lg-0">
+								<li class="nav-item mb-4">
+									<form action="" method="get" class="">
+										<div class="form-group row d-flex justify-content-center align-items-center">
+											<input type="text" name="q" id="q" class="form-control rounded-5 col-7" placeholder="Search">
+											<button class="btn btn-outline-danger d-none col-2"><i class="fa fa-search"></i></button>
+										</div>
+										
+									</form>
+								</li>
+								
+								<li class="nav-item mb-4">
+									<a class="navbar-brand ms-3" href="#">
+										<i class="fa-solid fa-home me-2"></i>
+										Home
+									</a>
+								</li>
+								<li class="nav-item mb-4">
+									<a class="navbar-brand ms-3" href="#">
+										<i class="fa-solid fa-blog me-2"></i>
+										Blog
+									</a>
+								</li>
+
+								{% if not request.user.is_authenticated %}
+								
+								<li class="nav-item mb-4">
+									<a class="navbar-brand ms-3" href="{% url 'account_login' %}">
+										<i class="fa-solid fa-right-to-bracket me-2"></i>
+										Login
+									</a>
+								</li>
+								<li class="nav-item mb-4">
+									<a class="navbar-brand ms-3" href="{% url 'account_signup' %}">
+										<i class="fa-solid fa-user-plus me-2"></i>
+										Sign up
+									</a>
+								</li>
+								{% else %}
+								<li class="nav-item mb-4">
+									<a class="navbar-brand ms-3" href="{% url 'account_logout' %}">
+										<i class="fa-solid fa-right-to-bracket me-2"></i>
+										Logout
+									</a>
+								</li>
+								{% endif %}
+
+					
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
