@@ -51,7 +51,7 @@ class Category(MPTTModel):
 
 class BlogPost(models.Model):
     title = models.CharField(max_length=250, null=False, blank=False)
-    category = models.ManyToManyField(Category, verbose_name='categories', default=1)
+    category = models.ForeignKey(Category, verbose_name='categories', on_delete = models.CASCADE, blank=True, null=True)
     body = RichTextUploadingField(null=False, blank=False)
     image = models.ImageField(upload_to=upload_location, null=True, blank=True)
     date_published = models.DateTimeField(auto_now_add=True, verbose_name="date published")
