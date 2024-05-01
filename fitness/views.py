@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import FitnessGoalsForm
 from blog.models import BlogPost
+from product.models import Product
 from operator import attrgetter
 #from blog.utils import get_blog_queryset, get_category_queryset, get_blog_category_queryset
 """from operator import attrgetter
@@ -10,9 +11,11 @@ from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator"""
 
 def index_view(request):
     all_post = sorted(BlogPost.objects.all(), key=attrgetter('date_updated'), reverse=True)
+    product = sorted(Product.objects.all(), key=attrgetter('date_updated'), reverse=True)
     context = {
         'page': 'home',
-        'all_post': all_post[:6]
+        'all_post': all_post[:6],
+        'all_product': product[:6]
     }
     return render(request, "fitness/index.html", context)
 

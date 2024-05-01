@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'user',
     'fitness',
     'blog',
+    'product',
 
     # django alllauth
     'allauth',

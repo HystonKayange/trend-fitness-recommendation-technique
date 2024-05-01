@@ -2,7 +2,7 @@
 {% load static %}
 {% load humanize %}
 {% load hitcount_tags %}
-{% block head_title %}Blog{% endblock %}
+{% block head_title %}Product{% endblock %}
 {% block content %}
 <style>
     body{
@@ -22,7 +22,7 @@
     </div>
     <div class="container">
         <div class="row justify-content-start align-items-center">
-            {% for post in all_post %}
+            {% for post in posts %}
             <div class="col-sm-6">
                 <div class="card">
                     
@@ -39,7 +39,7 @@
                                 <div class="d-grid justify-content-start mx-2" style="width: 100%;">
 
                                     <div class="h6">
-                                        {{post.title}}
+                                        {{post.name}}
                                     </div>
                                     <ul class="mx-0 d-flex justify-content-between align-items-center small fs-6" style="width: 100%; padding-left: 0; margin-left: 0;">
                                         <li><i class="fa fa-user"></i> {{post.author}}</li>
@@ -49,7 +49,7 @@
                                 </div>
                             </div>
                             <p class="fw-normal">
-                                {{post.body|truncatewords:20 |safe}}
+                                {{post.description|truncatewords:20 |safe}}
                             </p>
                             <a href="{{post.get_absolute_url}}" class="btn btn-danger col-sm-6 col-md-4">Read More</a>
                         </div>

@@ -30,6 +30,9 @@
                         <a class="navbar-brand" href="{% url 'blog:blog' %}">Blog</a>
                     </li>
                     <li class="nav-item">
+                        <a class="navbar-brand" href="{% url 'product:product' %}">Product</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="navbar-brand" href="#">Service</a>
                     </li>
                     {% if not request.user.is_authenticated %}

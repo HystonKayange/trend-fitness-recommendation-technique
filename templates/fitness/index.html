@@ -14,7 +14,7 @@
 </style>
 
 
-<section class="mb-5 pt-5 container-fluid" style="background-color: var(--black); color: var(--yello);">
+<section class="mb-0 pt-5 container-fluid" style="background-color: var(--black); color: var(--yello);">
     <div class="container">
         <h5 class="fw-normal text-center">
             <p>Need Tips and advice?</p>
@@ -58,150 +58,116 @@
                 </div>
             </div>
             {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="mb-0 pt-5 container-fluid" style="background-color: var(--black); color: var(--yello);">
+    <div class="section container">
+        <div class="p-4 p-md-5 mb-4 mb-4rounded"  style="background-color: var(--black); color: var(--yello);" id="sneak-bg">
+            <div class="col-md-6 px-0">
+              <h1 class="display-4 fst-italic">Recommended Service.</h1>
+              <p class="lead my-3">
+                Trend Fitness is dedicated to providing professional fitness advice which will include a range from fitness plans to diet plans catered to every individual needs.
+              </p>
+              <p class="lead mb-0"><a href="#" class="text-white fw-bold">continue...</a></p>
+            </div>
+        </div>
+</section>
+
+<section class="mb-0 pt-5 container-fluid" style="background-color: var(--black); color: var(--yello);">
+    <div class="container">
+        <h5 class="fw-bold text-center">
+            Product
+            <p>Brwose through our products on health, fitness and diet</p>
+        </h5>
+    </div>
+    <div class="container">
+        <div class="row justify-content-start align-items-center">
+            {% for post in all_product %}
             <div class="col-sm-6">
                 <div class="card">
                     
                     <div class="card-img">
-                        <img class="bd-placeholder-img card-img-top" src="{% static 'img/2.jpeg' %}" alt="">
+                        <img class="bd-placeholder-img card-img-top" src="{{post.image_url}}" alt="{{post.title}}">
                     </div>
                     
                     <div class="card-body">
                         <div class="card-content ">
                             <div class="d-sm-flex justify-content-start align-items-center" style="margin-left: 0; padding-left: 0;">
                                 <div class="blog-date row justify-content-center text-center align-items-center fw-bold p-2">
-                                    <strong class="col-12 p-0">1</strong>
-                                    <strong class="col-12 p-0">JAN</strong>
-                                    <strong class="col-12 p-0">2024</strong>
+                                    <strong class="col-12 p-0">{{ post.date_published.date}}</strong>
                                 </div>
                                 <div class="d-grid justify-content-start mx-2" style="width: 100%;">
 
                                     <div class="h6">
-                                        Crush Fitness Goals: Quick Tips
+                                        {{post.name}}
                                     </div>
                                     <ul class="mx-0 d-flex justify-content-between align-items-center small fs-6" style="width: 100%; padding-left: 0; margin-left: 0;">
-                                        <li><i class="fa fa-user"></i> The King</li>
+                                        <li><i class="fa fa-user"></i> {{post.author}}</li>
                                         <li><i class="fa fa-comment"></i> Comments</li>
-                                        <li><i class="fa fa-eye"></i> 3 Views</li>
+                                        <li><i class="fa fa-eye"></i> {% get_hit_count for post %} Views</li>
                                     </ul>
                                 </div>
                             </div>
                             <p class="fw-normal">
-                                Fitness remains up to date with the latest fitness trends and
-                                innovations, providing users with fresh and relevant content to 
-                                enhance their fitness knowledge. 
+                                {{post.description|truncatewords:20 |safe}}
                             </p>
-                            <a href="#" class="btn btn-danger col-sm-6 col-md-4">Read More</a>
+                            <a href="{{post.get_absolute_url}}" class="btn btn-danger col-sm-6 col-md-4">Read More</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div class="card">
-                    
-                    <div class="card-img">
-                        <img class="bd-placeholder-img card-img-top" src="{% static 'img/2.jpeg' %}" alt="">
-                    </div>
-                    
-                    <div class="card-body">
-                        <div class="card-content ">
-                            <div class="d-sm-flex justify-content-start align-items-center" style="margin-left: 0; padding-left: 0;">
-                                <div class="blog-date row justify-content-center text-center align-items-center fw-bold p-2">
-                                    <strong class="col-12 p-0">1</strong>
-                                    <strong class="col-12 p-0">JAN</strong>
-                                    <strong class="col-12 p-0">2024</strong>
-                                </div>
-                                <div class="d-grid justify-content-start mx-2" style="width: 100%;">
+            {% endfor %}
+        </div>
+    </div>
+</section>
 
-                                    <div class="h6">
-                                        Crush Fitness Goals: Quick Tips
-                                    </div>
-                                    <ul class="mx-0 d-flex justify-content-between align-items-center small fs-6" style="width: 100%; padding-left: 0; margin-left: 0;">
-                                        <li><i class="fa fa-user"></i> The King</li>
-                                        <li><i class="fa fa-comment"></i> Comments</li>
-                                        <li><i class="fa fa-eye"></i> 3 Views</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <p class="fw-normal">
-                                Fitness remains up to date with the latest fitness trends and
-                                innovations, providing users with fresh and relevant content to 
-                                enhance their fitness knowledge. 
-                            </p>
-                            <a href="#" class="btn btn-danger col-sm-6 col-md-4">Read More</a>
-                        </div>
-                    </div>
-                </div>
+<section class="mb-0 pt-5 container-fluid" style="background-color: var(--black); color: var(--yello);">
+    <div class="section container-lg d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3">
+        <div class="row featurette align-items-center">
+
+               
+            <div class="col-12 scroll-x-down-el">
+                <div class="fs-1 fw-bold text-center">Seamless User Experience</div>                        
+                <p class="fs-3 text-center">Create an intuitive, user-friendly platform that offers a seamless experience for both beginners and experienced users, allowing them to easily navigate and maximize their resources.</p>
             </div>
-            <div class="col-sm-6">
-                <div class="card">
-                    
-                    <div class="card-img">
-                        <img class="bd-placeholder-img card-img-top" src="{% static 'img/2.jpeg' %}" alt="">
-                    </div>
-                    
-                    <div class="card-body">
-                        <div class="card-content ">
-                            <div class="d-sm-flex justify-content-start align-items-center" style="margin-left: 0; padding-left: 0;">
-                                <div class="blog-date row justify-content-center text-center align-items-center fw-bold p-2">
-                                    <strong class="col-12 p-0">1</strong>
-                                    <strong class="col-12 p-0">JAN</strong>
-                                    <strong class="col-12 p-0">2024</strong>
-                                </div>
-                                <div class="d-grid justify-content-start mx-2" style="width: 100%;">
 
-                                    <div class="h6">
-                                        Crush Fitness Goals: Quick Tips
-                                    </div>
-                                    <ul class="mx-0 d-flex justify-content-between align-items-center small fs-6" style="width: 100%; padding-left: 0; margin-left: 0;">
-                                        <li><i class="fa fa-user"></i> The King</li>
-                                        <li><i class="fa fa-comment"></i> Comments</li>
-                                        <li><i class="fa fa-eye"></i> 3 Views</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <p class="fw-normal">
-                                Fitness remains up to date with the latest fitness trends and
-                                innovations, providing users with fresh and relevant content to 
-                                enhance their fitness knowledge. 
-                            </p>
-                            <a href="#" class="btn btn-danger col-sm-6 col-md-4">Read More</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-12 scroll-x-top-el">
+                <div class="fs-1 fw-bold text-center">Standard Cleaning Service</div>                        
+                <p class="fs-3 text-center">The Standard Cleaning Service is suited for sneakers that are in need of a regular refresh. This level of service is ideal for general maintenance to keep sneakers looking clean and presentable.</p>
             </div>
-            <div class="col-sm-6">
-                <div class="card">
-                    
-                    <div class="card-img">
-                        <img class="bd-placeholder-img card-img-top" src="{% static 'img/2.jpeg' %}" alt="">
-                    </div>
-                    
-                    <div class="card-body">
-                        <div class="card-content ">
-                            <div class="d-sm-flex justify-content-start align-items-center" style="margin-left: 0; padding-left: 0;">
-                                <div class="blog-date row justify-content-center text-center align-items-center fw-bold p-2">
-                                    <strong class="col-12 p-0">1</strong>
-                                    <strong class="col-12 p-0">JAN</strong>
-                                    <strong class="col-12 p-0">2024</strong>
-                                </div>
-                                <div class="d-grid justify-content-start mx-2" style="width: 100%;">
 
-                                    <div class="h6">
-                                        Crush Fitness Goals: Quick Tips
-                                    </div>
-                                    <ul class="mx-0 d-flex justify-content-between align-items-center small fs-6" style="width: 100%; padding-left: 0; margin-left: 0;">
-                                        <li><i class="fa fa-user"></i> The King</li>
-                                        <li><i class="fa fa-comment"></i> Comments</li>
-                                        <li><i class="fa fa-eye"></i> 3 Views</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <p class="fw-normal">
-                                Fitness remains up to date with the latest fitness trends and
-                                innovations, providing users with fresh and relevant content to 
-                                enhance their fitness knowledge. 
-                            </p>
-                            <a href="#" class="btn btn-danger col-sm-6 col-md-4">Read More</a>
+            <div class="col-12 scroll-x-down-el">
+                <div class="fs-1 fw-bold text-center">Deep Cleaning Service</div>                        
+                <p class="fs-3 text-center">Our Deep Cleaning Service is designed for sneakers that require intensive restoration. This level of service is ideal for shoes with stubborn stains, deeply ingrained dirt, or strong odors.</p>
+            </div> 
+
+            <div class="col-12 scroll-x-top-el">
+                <div class="fs-1 fw-bold text-center">Fitness Service</div>                        
+                <p class="fs-3 text-center">Our Premium Cleaning Service is the pinnacle of sneaker care. This level of service includes a combination of deep cleaning and premium conditioning to ensure that sneakers receive the utmost care and attention. Our team will meticulously clean the shoes with specialized techniques, paying close attention to detail to ensure that every aspect of the fitness is thoroughly cared for.</p>
+            </div>                   
+        </div>
+    </div>
+
+    <div>
+        <div class="section navbar container-lg d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-1 pb-2 mb-3">
+            <div class="row featurette mt-5 align-items-center mb-3">
+                <div class="col-md-6 mb-3 scroll-x-down-el scroll-y-top-el">
+                    <div class="fs-1 fw-bold text-start">
+                        <strong>We Give the best Service</strong>
+                    </div>
+                    <p class="fs-3 text-start">
+                        No matter which level of service is chosen, Sneaksavers is committed to providing the highest quality care for sneakers. Our professional cleaning services are designed to meet the diverse needs of our customers, ensuring that every pair of sneakers receives the specialized treatment it deserves.
+                    </p>
+                </div>
+
+                <div class="col mt-lg-0 mt-sm- fw-bold fs-55 order-lg-last">
+                    <div
+                        class="h-100 shadow">
+                        <!-- style="background-image: url('{% static 'img/dashboard_desktop.png' %}'); background-size:cover; width:100%; height:100%;" -->
+                        <div class="">
+                            <img style="width: 100%;" src="{% static 'img/1.jpeg' %}" alt="TrendFitness">
                         </div>
                     </div>
                 </div>

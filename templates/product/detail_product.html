@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load humanize %}
+{% load hitcount_tags %}
+{% block head_title %}Detail Product{% endblock %}
+{% block content %}
+<style>
+    body{
+        background: var(--black);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--black);
+        color: var(--yello);
+    }
+</style>
+<section class="my-5">
+    <div class="container">
+        <h5 class="fw-bold text-center">
+            {{product.name}}
+            <p>Brwose through our blogs on health, fitness and diet</p>
+        </h5>
+    </div>
+    <div class="container">
+        <div class="row justify-content-start align-items-center">
+            <div class="col">
+                <div class="card">
+                    
+                    <div class="card-img">
+                        <img class="bd-placeholder-img card-img-top" src="{{product.image_url}}" alt="{{product.name}}">
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="card-content ">
+                            <div class="d-sm-flex justify-content-start align-items-center" style="margin-left: 0; padding-left: 0;">
+                                <div class="blog-date row justify-content-center text-center align-items-center fw-bold p-2">
+                                    <strong class="col-12 p-0">{{ product.date_published.date}}</strong>
+                                </div>
+                                <div class="d-grid justify-content-start mx-2" style="width: 100%;">
+
+                                    <div class="h6">
+                                        Category: <a href="/product/tag/{{product.tag}}">{{product.tag}}</a>
+                                    </div>
+                                    <ul class="mx-0 d-flex justify-content-between align-items-center small fs-6" style="width: 100%; padding-left: 0; margin-left: 0;">
+                                        <li><i class="fa fa-user"></i> {{product.author}}</li>
+                                        <li><i class="fa fa-comment"></i> Comments</li>
+                                        <li><i class="fa fa-eye"></i> {% get_hit_count for product %} Views</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="fw-normal">
+                                {{product.description |safe}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="my-5">
+    <div class="container">
+        <h5 class="fw-normal text-center">
+            Popular Products
+        </h5>
+    </div>
+    <div class="container">
+        <div class="row justify-content-start align-items-center">
+            {% for product in popular_product %}
+            <div class="col-sm-6">
+                <div class="card">
+                    
+                    <div class="card-img">
+                        <img class="bd-placeholder-img card-img-top" src="{{product.image_url}}" alt="{{product.name}}">
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="card-content ">
+                            <div class="d-sm-flex justify-content-start align-items-center" style="margin-left: 0; padding-left: 0;">
+                                <div class="blog-date row justify-content-center text-center align-items-center fw-bold p-2">
+                                    <strong class="col-12 p-0">{{ product.date_published.date}}</strong>
+                                </div>
+                                <div class="d-grid justify-content-start mx-2" style="width: 100%;">
+
+                                    <div class="h6">
+                                        {{product.name}}
+                                    </div>
+                                    <ul class="mx-0 d-flex justify-content-between align-items-center small fs-6" style="width: 100%; padding-left: 0; margin-left: 0;">
+                                        <li><i class="fa fa-user"></i> {{product.author}}</li>
+                                        <li><i class="fa fa-comment"></i> Comments</li>
+                                        <li><i class="fa fa-eye"></i> {% get_hit_count for product %} Views</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="fw-normal">
+                                {{product.description|truncatewords:20 |safe}}
+                            </p>
+                            <a href="{{product.get_absolute_url}}" class="btn btn-danger col-sm-6 col-md-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+{% endblock %}
