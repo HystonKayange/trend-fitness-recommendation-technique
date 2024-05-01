@@ -44,11 +44,22 @@ INSTALLED_APPS = [
     #installed
     'user',
     'fitness',
+    'blog',
 
     # django alllauth
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+
+    'mptt',
+
+    # ckeditor
+    'ckeditor',
+    'ckeditor_uploader',
+    #'highlightjs',
+
+    # django hitcount
+    'hitcount',
 ]
 
 MIDDLEWARE = [
@@ -64,7 +75,7 @@ MIDDLEWARE = [
 
 AUTH_USER_MODEL = "user.CustomUser"
 
-ROOT_URLCONF = f'{config("SITE_SRC")}.urls'
+ROOT_URLCONF = f'{config("PROJECT_NAME")}.urls'
 
 TEMPLATES = [
     {
@@ -82,7 +93,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = f'{config("SITE_SRC")}.wsgi.application'
+WSGI_APPLICATION = f'{config("PROJECT_NAME")}.wsgi.application'
 
 
 # Password validation
@@ -206,6 +217,7 @@ ACCOUNT_LOGOUT_ON_GET = True
 ACCOUNT_UNIQUE_EMAIL = True
 
 ACCOUNT_FORMS = {'signup': 'user.forms.RegistrationForm'}
+ACCOUNT_ADAPTER = 'user.adapter.MyAccountAdapter'
 #ACCOUNT_USERNAME_MIN_LENGTH = 10
 
 ACCOUNT_EMAIL_REQUIRED = True
@@ -222,19 +234,19 @@ JAZZMIN_SETTINGS = {
     "site_brand": "TrendFitness",
 
     # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": "images/logo.png",
+    "site_logo": "img/logo.jpeg",
 
     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
-    "login_logo": "images/logo.png",
+    "login_logo": "img/logo.jpeg",
 
     # Logo to use for login form in dark themes (defaults to login_logo)
-    "login_logo_dark": "images/logo.png",
+    "login_logo_dark": "img/logo.jpeg",
 
     # CSS classes that are applied to the logo above
     "site_logo_classes": "img-circle",
 
     # Relative path to a images/logo for your site, will default to site_logo if absent (ideally 32x32 px)
-    "site_icon": "images/logo.png",
+    "site_icon": "img/logo.jpeg",
 
     # Welcome text on the login screen
     "welcome_sign": "Welcome to TrendFitness",
@@ -290,7 +302,7 @@ JAZZMIN_SETTINGS = {
     # UI Tweaks #
     #############
     # Relative paths to custom CSS/JS scripts (must be present in static files)
-    "custom_css": "css/main.css",
+    "custom_css": "css/style.css",
     "custom_js": None,
     # Whether to link font from fonts.googleapis.com (use custom_css to supply font otherwise)
     "use_google_fonts_cdn": True,
@@ -300,4 +312,31 @@ JAZZMIN_SETTINGS = {
     "changeform_format_overrides": {"user": "collapsible", "allauth.account": "vertical_tabs"},
     # Add a language dropdown into the admin
     "language_chooser": False,
+}
+
+# ckeditor
+CKEDITOR_UPLOAD_PATH = "uploads/"
+
+CKEDITOR_IMAGE_BACKEND = "pillow"
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        #'skin': 'office2013',
+        # 'skin': 'office2013',
+        'toolbar_Basic': [
+            ['Source', '-', 'Bold', 'Italic']
+        ],
+        'toolbar': 'YourCustomToolbarConfig',  # put selected toolbar config here
+        # 'toolbarGroups': [{ 'name': 'document', 'groups': [ 'mode', 'document', 'doctools' ] }],
+        # 'height': 291,
+        'width': '100%',
+        # 'filebrowserWindowHeight': 725,
+        # 'filebrowserWindowWidth': 940,
+        # 'toolbarCanCollapse': True,
+        # 'mathJaxLib': '//cdn.mathjax.org/mathjax/2.2-latest/MathJax.js?config=TeX-AMS_HTML',
+        'tabSpaces': 4,
+
+        'extraPlugins': ','.join([
+        ]),
+    }
 }

@@ -1,0 +1,242 @@
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <i class="fa fa-arrow-left"></i>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <i class="fa fa-arrow-right"></i>
+    </a>
+  </div>
+
+
+  <style>
+    body{
+        background: url('{% static "img/2.jpeg"%}');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--black);
+    }
+
+    .processing_bg {
+        position: absolute;
+        z-index: 9999999;
+        background: var(--black);
+        width: 100%;
+        height: 100%;
+    }
+
+    .processing {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .processing img {
+        width: 80px;
+        animation: fadeImg 2s linear infinite;
+    }
+
+
+    .show{
+        display: block;
+        transition: 1s display ease-in-out;
+    }
+</style>
+
+<div class="login-box mt-5 mb-3">
+    
+
+  <div class="card" width="500">
+    <div class="processing_bg hidden-item" id="processing">
+        <div class="processing">
+          <img src="{% static 'img/logo.jpeg' %}" alt="loading" />
+        </div>
+    </div>
+    
+    <div class="mb-3 text-center">
+      <div class="mt-4">
+        <h3 class="fw-bold fs-h2 navy-blue">Personalization</h3>
+      </div>
+    </div>
+    <div class="card-body">
+          
+  <p class="login-box-msg">Welcome to TrendFitness, please fill out the form below to Personalize your profile</p>
+  <form method="post" enctype="multipart/form-data"  novalidate="" class="needs-validation" id="form-signin"> {% csrf_token %}
+    {% if redirect_field_value %}
+    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+    {% endif %}
+
+    <p class="form-text error-text text-danger">
+      {{ form.non_field_errors.as_text }}
+    </p>
+
+    <div class="mb-4 show f1">
+        <label class="fw-bold">Primary Fitness Goal:</label><br>
+        <input type="radio" id="weightLoss" name="fitnessGoal" value="Weight Loss" checked>
+        <label for="weightLoss">Weight Loss</label><br>
+        <input type="radio" id="muscleBuilding" name="fitnessGoal" value="Muscle Building">
+        <label for="muscleBuilding">Muscle Building</label><br>
+        <input type="radio" id="stayFit" name="fitnessGoal" value="Stay Fit">
+        <label for="stayFit">Stay Fit</label><br>
+    </div>
+
+    <div class="mb-4 show f1">
+        <label class="fw-bold">Physical Activity Level:</label><br>
+        <input type="radio" id="lowActivity" name="activityLevel" value="Low">
+        <label for="lowActivity">Low</label><br>
+        <input type="radio" id="moderateActivity" name="activityLevel" value="Moderate">
+        <label for="moderateActivity">Moderate</label><br>
+        <input type="radio" id="highActivity" name="activityLevel" value="High" checked>
+        <label for="highActivity">High</label><br>
+    </div>
+
+    <div class="mb-4 hidden f2">
+        <label class="fw-bold" for="medicalHistory">Medical History:</label><br>
+        <input type="text" id="medicalHistory" name="medicalHistory" value="None"><br>
+    </div>
+
+    <div class="mb-4 hidden f2">
+        <label class="fw-bold">Time Commitment:</label><br>
+        <input type="radio" id="1-2hours" name="timeCommitment" value="1-2 hours per week">
+        <label for="1-2hours">1-2 hours per week</label><br>
+        <input type="radio" id="3-5hours" name="timeCommitment" value="3-5 hours per week">
+        <label for="3-5hours">3-5 hours per week</label><br>
+        <input type="radio" id="5-7hours" name="timeCommitment" value="5-7 hours per week" checked>
+        <label for="5-7hours">5-7 hours per week</label><br>
+        <input type="radio" id="moreThan7hours" name="timeCommitment" value="More than 7 hours per week">
+        <label for="moreThan7hours">More than 7 hours per week</label><br>
+    </div>
+
+    <div class="mb-4 hidden f3">
+        <label class="fw-bold" for="nutritionalPreferences">Nutritional Preferences:</label><br>
+        <input type="text" id="nutritionalPreferences" name="nutritionalPreferences" value="Balanced Diet"><br>
+    </div>
+
+    <div class="mb-4 hidden f3">
+        <label class="fw-bold">Fitness Environment:</label><br>
+        <input type="radio" id="home" name="fitnessEnvironment" value="Home">
+        <label for="home">Home</label><br>
+        <input type="radio" id="gym" name="fitnessEnvironment" value="Gym" checked>
+        <label for="gym">Gym</label><br>
+        <input type="radio" id="outdoor" name="fitnessEnvironment" value="Outdoor">
+        <label for="outdoor">Outdoor</label><br>
+        <input type="radio" id="studio" name="fitnessEnvironment" value="Studio">
+        <label for="studio">Studio</label><br>
+    </div>
+
+    <div class="mb-4 hidden f4">
+        <label class="fw-bold">Tracking Methods:</label><br>
+        <input type="radio" id="penAndPaper" name="trackingMethods" value="Pen and Paper">
+        <label for="penAndPaper">Pen and Paper</label><br>
+        <input type="radio" id="fitnessApp" name="trackingMethods" value="Fitness App" checked>
+        <label for="fitnessApp">Fitness App</label><br>
+        <input type="radio" id="wearableDevice" name="trackingMethods" value="Wearable Device">
+        <label for="wearableDevice">Wearable Device</label><br>
+        <input type="radio" id="personalTrainer" name="trackingMethods" value="Personal Trainer">
+        <label for="personalTrainer">Personal Trainer</label><br>
+    </div>
+
+    <div class="mb-4 hidden f4">
+        <label class="fw-bold" for="challengesFaced">Challenges Faced:</label><br>
+        <textarea id="challengesFaced" rows="10" cols="50" name="challengesFaced">Lack of Motivation</textarea><br>
+    </div>
+
+
+    <div class="row justify-content-between">
+        <div class="col-3 ">
+            <button id="back" type="button" class="btn btn-danger fw-bolder hidden-item btn-block" style="color: black;">
+                <i class="fa fa-arrow-left"></i>
+            </button>
+        </div>
+        <div class="col-3">
+            <button id="continue" type="button" class="btn btn-danger fw-bolder btn-block" style="color: black;">
+                <i class="fa fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+      
+      
+      <div class="row justify-content-center" hidden>
+          <div class="col-3">
+              <button disabled type="submit" class="btn btn-danger fw-bolder btn-block" style="color: black;">
+                  Login
+              </button>
+          </div>
+      </div>
+  </form>
+
+      </div>
+  </div>
+</div>
+
+<script src="{% static 'js/form-validation.js' %}"></script>
+<script src="{% static 'js/preloader.js' %}"></script>
+<script>
+    let btncont = document.querySelector('#continue')
+    let btnback = document.querySelector('#back')
+    let f1 = document.querySelectorAll('.f1')
+    let f2 = document.querySelectorAll('.f2')
+    let f3 = document.querySelectorAll('.f3')
+    let f4 = document.querySelectorAll('.f4')
+    let count = 0
+
+    
+
+    btncont.addEventListener('click', ()=> {
+        count++
+        if (count == 1) {
+            loadNewData(f1, f2)
+            btnback.classList.remove('hidden-item')
+        }
+        else if (count == 2) {
+            loadNewData(f2, f3)
+        }
+        else if (count == 3) {
+            loadNewData(f3, f4)
+        }
+        else if (count == 4) {
+            loadNewData(f4, f1)
+            count = 0
+        }
+    })
+
+    btnback.addEventListener('click', ()=> {
+        count++
+        if (count == 2) {
+            loadNewData(f2, f1)
+        }
+        else if (count == 3) {
+            loadNewData(f3, f2)
+        }
+        else if (count == 4) {
+            loadNewData(f4, f3)
+        }
+        else if (count == 0) {
+            loadNewData(f1, f4)
+            count = 0
+        }
+    })
+</script>
+
