@@ -123,8 +123,8 @@ class DetailPostView(HitCountDetailView):
         post = self.get_queryset()
         post = post.first()
 
-        cat = post.category.all()
-        related_post = BlogPost.objects.filter(category__in=cat).exclude(slug=self.kwargs['slug'])
+        cat = post.category
+        related_post = BlogPost.objects.filter(category=cat).exclude(slug=self.kwargs['slug'])
         related_post = related_post.annotate(tag_count=Count('category')).order_by('-tag_count', '-date_published')
 
         comments = post.comments.all()

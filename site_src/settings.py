@@ -35,6 +35,7 @@ ALLOWED_HOSTS = [config("END_POINT"),]
 INSTALLED_APPS = [
     'jazzmin',
     'django.contrib.admin',
+    'django.contrib.humanize',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
