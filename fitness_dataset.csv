@@ -9,3 +9,258 @@ User ID,Primary Fitness Goal,Physical Activity Level,Medical History,Time Commit
 8,Athletic Performance,High,None,5-7 hours per week,Paleo Diet,Sports Club,Coach/Trainer,Injury Prevention
 9,Weight Maintenance,Low,Diabetes,1-3 hours per week,Low Fat Diet,Community Center,Peer Support,Emotional Eating
 10,Injury Prevention,Moderate,Previous Injury,3-5 hours per week,Balanced Diet,Physical Therapy Clinic,Video Logging,Fear of Reinjury
+11,Weight Loss,Low,None,1-3 hours per week,Vegan Diet,Home Workouts,Fitness App,Lack of Energy
+12,Muscle Gain,High,None,5-7 hours per week,High Protein Diet,Commercial Gym,Fitness Tracker,Plateau in Progress
+13,Endurance,Moderate,None,3-5 hours per week,Balanced Diet,Running Track,Smartwatch,Time Constraints
+14,Overall Health,Moderate,High Cholesterol,3-5 hours per week,Low Sodium Diet,Outdoor Bootcamp,Journaling,Healthy Eating on a Budget
+15,Flexibility,Low,Back Pain,1-3 hours per week,Keto Diet,Yoga Studio,Manual Logging,Lack of Flexibility
+16,Core Strength,High,None,5-7 hours per week,Paleo Diet,CrossFit Box,Workout Buddy,Lack of Discipline
+17,Stress Relief,Moderate,Depression,3-5 hours per week,Mediterranean Diet,Pilates Studio,Mood Tracker,Work-Life Balance
+18,Athletic Performance,High,None,5-7 hours per week,High Carb Diet,Athletic Training Facility,Performance Metrics,Burnout
+19,Weight Maintenance,Moderate,None,3-5 hours per week,Low Glycemic Diet,Recreational Sports,Calorie Counting,Social Pressure
+20,Injury Prevention,Low,Previous Injury,1-3 hours per week,Balanced Diet,Rehabilitation Center,Physical Journal,Overtraining
+21,Weight Loss,High,None,5-7 hours per week,Low Calorie Diet,Indoor Cycling Studio,Heart Rate Monitor,Lack of Support
+22,Muscle Gain,Moderate,None,3-5 hours per week,Protein-Rich Diet,Strength Training Gym,Progress Photos,Body Image Concerns
+23,Endurance,High,Previous Knee Surgery,5-7 hours per week,Vegetarian Diet,Cycling Club,Power Meter,Rehabilitation Progress
+24,Overall Health,Low,Type 2 Diabetes,1-3 hours per week,Gluten-Free Diet,Senior Fitness Center,Blood Sugar Monitoring,Lack of Motivation
+25,Flexibility,Moderate,Joint Stiffness,3-5 hours per week,Balanced Diet,Stretching Studio,Feel-Good Journal,Persistent Pain
+26,Core Strength,High,None,5-7 hours per week,Low Carb Diet,Pilates Studio,Personal Trainer,Lack of Core Activation
+27,Stress Relief,Low,Insomnia,1-3 hours per week,Mindful Eating,Beach Yoga,Gratitude Journal,Busy Schedule
+28,Athletic Performance,High,None,5-7 hours per week,Whole Foods Diet,Track and Field,Speed Timer,Overtraining
+29,Weight Maintenance,Low,Hypothyroidism,1-3 hours per week,Portion Control Diet,Recreational Center,Friend Accountability,Slow Metabolism
+30,Injury Prevention,Low,Previous Shoulder Injury,1-3 hours per week,High Fiber Diet,Rehabilitation Gym,Mobility Tracking,Fear of Reinjury
+31,Weight Loss,Low,None,1-3 hours per week,Vegan Diet,Home Workouts,Fitness App,Lack of Energy
+32,Muscle Gain,High,None,5-7 hours per week,High Protein Diet,Commercial Gym,Fitness Tracker,Plateau in Progress
+33,Endurance,Moderate,None,3-5 hours per week,Balanced Diet,Running Track,Smartwatch,Time Constraints
+34,Overall Health,Moderate,High Cholesterol,3-5 hours per week,Low Sodium Diet,Outdoor Bootcamp,Journaling,Healthy Eating on a Budget
+35,Flexibility,Low,Back Pain,1-3 hours per week,Keto Diet,Yoga Studio,Manual Logging,Lack of Flexibility
+36,Core Strength,High,None,5-7 hours per week,Paleo Diet,CrossFit Box,Workout Buddy,Lack of Discipline
+37,Stress Relief,Moderate,Depression,3-5 hours per week,Mediterranean Diet,Pilates Studio,Mood Tracker,Work-Life Balance
+38,Athletic Performance,High,None,5-7 hours per week,High Carb Diet,Athletic Training Facility,Performance Metrics,Burnout
+39,Weight Maintenance,Moderate,None,3-5 hours per week,Low Glycemic Diet,Recreational Sports,Calorie Counting,Social Pressure
+40,Injury Prevention,Low,Previous Injury,1-3 hours per week,Balanced Diet,Rehabilitation Center,Physical Journal,Overtraining
+41,Weight Loss,High,None,5-7 hours per week,Low Calorie Diet,Indoor Cycling Studio,Heart Rate Monitor,Lack of Support
+42,Muscle Gain,Moderate,None,3-5 hours per week,Protein-Rich Diet,Strength Training Gym,Progress Photos,Body Image Concerns
+43,Endurance,High,Previous Knee Surgery,5-7 hours per week,Vegetarian Diet,Cycling Club,Power Meter,Rehabilitation Progress
+44,Overall Health,Low,Type 2 Diabetes,1-3 hours per week,Gluten-Free Diet,Senior Fitness Center,Blood Sugar Monitoring,Lack of Motivation
+45,Flexibility,Moderate,Joint Stiffness,3-5 hours per week,Balanced Diet,Stretching Studio,Feel-Good Journal,Persistent Pain
+46,Core Strength,High,None,5-7 hours per week,Low Carb Diet,Pilates Studio,Personal Trainer,Lack of Core Activation
+47,Stress Relief,Low,Insomnia,1-3 hours per week,Mindful Eating,Beach Yoga,Gratitude Journal,Busy Schedule
+48,Athletic Performance,High,None,5-7 hours per week,Whole Foods Diet,Track and Field,Speed Timer,Overtraining
+49,Weight Maintenance,Low,Hypothyroidism,1-3 hours per week,Portion Control Diet,Recreational Center,Friend Accountability,Slow Metabolism
+50,Injury Prevention,Low,Previous Shoulder Injury,1-3 hours per week,High Fiber Diet,Rehabilitation Gym,Mobility Tracking,Fear of Reinjury
+51,Weight Loss,Moderate,None,3-5 hours per week,Intermittent Fasting,Outdoor Bootcamp,Calorie Tracker,Lack of Time
+52,Muscle Gain,High,None,5-7 hours per week,Macrobiotic Diet,Strength Training Gym,Workout Log,Body Image Insecurities
+53,Endurance,Moderate,Previous Asthma,3-5 hours per week,High Protein Diet,Running Track,Heart Rate Monitor,Breathing Difficulties
+54,Overall Health,Low,Rheumatoid Arthritis,1-3 hours per week,Alkaline Diet,Senior Fitness Class,Joint Pain Diary,Medication Side Effects
+55,Flexibility,Low,Scoliosis,1-3 hours per week,Balanced Diet,Stretching Studio,Flexibility Tracker,Chronic Back Pain
+56,Core Strength,Moderate,None,3-5 hours per week,Whole Foods Diet,Home Workout Space,Bodyweight Exercises,Lack of Core Stability
+57,Stress Relief,Moderate,PTSD,3-5 hours per week,Balanced Diet,Mindfulness Center,Stress Journal,Lack of Sleep
+58,Athletic Performance,High,None,5-7 hours per week,Ketogenic Diet,Athletic Training Facility,Power Output Meter,Overtraining
+59,Weight Maintenance,Moderate,Polycystic Ovary Syndrome (PCOS),3-5 hours per week,Low Carb Diet,YMCA,Macro Tracking,Sugar Cravings
+60,Injury Prevention,Low,Previous Wrist Fracture,1-3 hours per week,Balanced Diet,Physical Therapy Clinic,Range of Motion Exercises,Fear of Reinjury
+61,Weight Loss,Moderate,None,3-5 hours per week,Low Calorie Diet,HIIT Studio,Food Diary,Plateau in Progress
+62,Muscle Gain,High,None,5-7 hours per week,High Protein Diet,Bodybuilding Gym,Strength Progression Log,Injury Risk
+63,Endurance,High,Previous ACL Tear,5-7 hours per week,Plant-Based Diet,Cycling Studio,Cadence Sensor,Rehabilitation Progress
+64,Overall Health,Low,Osteoporosis,1-3 hours per week,Calcium-Rich Diet,Senior Fitness Center,Bone Density Tracking,Lack of Mobility
+65,Flexibility,Low,Tight Hamstrings,1-3 hours per week,Balanced Diet,Yoga Studio,Stretching Routine,Stiffness
+66,Core Strength,Moderate,None,3-5 hours per week,Low Fat Diet,Group Fitness Classes,Abdominal Strength Test,Lack of Core Stability
+67,Stress Relief,Moderate,Chronic Fatigue Syndrome,3-5 hours per week,Whole Foods Diet,Mindfulness Retreat,Stress Tracker,Chronic Fatigue
+68,Athletic Performance,High,None,5-7 hours per week,High Carb Diet,Sports Complex,Performance Metrics,Injury Risk
+69,Weight Maintenance,Low,Hypothyroidism,1-3 hours per week,Balanced Diet,Community Fitness Center,Support Group,Slow Metabolism
+70,Injury Prevention,Low,Previous Shoulder Dislocation,1-3 hours per week,Low Glycemic Diet,Physical Therapy Center,Shoulder Mobility Exercises,Fear of Reinjury
+71,Weight Loss,Moderate,PCOS,3-5 hours per week,Low Carb Diet,Outdoor Bootcamp,Calorie Tracker,Emotional Eating Triggers
+72,Muscle Gain,High,None,5-7 hours per week,High Protein Diet,Private Gym,Fitness App,Body Dysmorphia
+73,Endurance,Moderate,Previous ACL Tear,3-5 hours per week,Balanced Diet,Running Trails,GPS Watch,Knee Pain
+74,Overall Health,Low,Obesity,1-3 hours per week,Low Fat Diet,Senior Fitness Center,Doctor's Advice,Lack of Family Support
+75,Flexibility,Low,Herniated Disc,1-3 hours per week,Anti-Inflammatory Diet,Physical Therapy Studio,Range of Motion Testing,Chronic Pain Management
+76,Core Strength,Moderate,None,3-5 hours per week,High Fiber Diet,Group Fitness Classes,Progress Photos,Workout Plateaus
+77,Stress Relief,High,Burnout,5-7 hours per week,Balanced Diet,Mindfulness Studio,Stress Tracker,Work-Life Balance
+78,Athletic Performance,High,None,5-7 hours per week,Plant-Based Diet,Sports Arena,Coach/Trainer,Overtraining
+79,Weight Maintenance,Moderate,PCOS,3-5 hours per week,Low Glycemic Diet,Community Recreation Center,Portion Control,Weight Fluctuations
+80,Injury Prevention,Low,Previous Ankle Sprain,1-3 hours per week,Balanced Diet,Rehabilitation Facility,Joint Mobility Log,Fear of Recurrence
+81,Weight Loss,Moderate,None,3-5 hours per week,Keto Diet,Boxing Gym,Calorie Counting,Low Energy Levels
+82,Muscle Gain,High,None,5-7 hours per week,High Carb Diet,Powerlifting Gym,Strength Progression Log,Training Plateaus
+83,Endurance,High,Previous Stress Fracture,5-7 hours per week,Gluten-Free Diet,Swimming Pool,Lap Counting,Recovery After Injury
+84,Overall Health,Low,High Blood Pressure,1-3 hours per week,Heart-Healthy Diet,Senior Center,Medication Tracking,Family Medical History
+85,Flexibility,Low,Sciatica,1-3 hours per week,Balanced Diet,Pilates Studio,Pain Diary,Difficulty Sitting for Long Periods
+86,Core Strength,Moderate,None,3-5 hours per week,Low Calorie Diet,Bodyweight Fitness Park,Exercise Journal,Plateau in Progress
+87,Stress Relief,Moderate,Panic Attacks,3-5 hours per week,Mediterranean Diet,Mindfulness Retreat,Anxiety Journal,Work-Life Balance
+88,Athletic Performance,High,None,5-7 hours per week,Protein-Rich Diet,Sports Complex,Performance Metrics,Overtraining
+89,Weight Maintenance,Low,Hashimoto's Disease,1-3 hours per week,Balanced Diet,Community Fitness Center,Support Group,Slow Metabolism
+90,Weight Loss,Moderate,PCOS,3-5 hours per week,Low Carb Diet,Outdoor Bootcamp,Calorie Tracker,Emotional Eating Triggers
+91,Muscle Gain,High,None,5-7 hours per week,High Protein Diet,Private Gym,Fitness App,Body Dysmorphia
+92,Endurance,Moderate,Previous ACL Tear,3-5 hours per week,Balanced Diet,Running Trails,GPS Watch,Knee Pain
+93,Overall Health,Low,Obesity,1-3 hours per week,Low Fat Diet,Senior Fitness Center,Doctor's Advice,Lack of Family Support
+94,Flexibility,Low,Herniated Disc,1-3 hours per week,Anti-Inflammatory Diet,Physical Therapy Studio,Range of Motion Testing,Chronic Pain Management
+95,Core Strength,Moderate,None,3-5 hours per week,High Fiber Diet,Group Fitness Classes,Progress Photos,Workout Plateaus
+96,Stress Relief,High,Burnout,5-7 hours per week,Balanced Diet,Mindfulness Studio,Stress Tracker,Work-Life Balance
+97,Athletic Performance,High,None,5-7 hours per week,Plant-Based Diet,Sports Arena,Coach/Trainer,Overtraining
+98,Weight Maintenance,Moderate,PCOS,3-5 hours per week,Low Glycemic Diet,Community Recreation Center,Portion Control,Weight Fluctuations
+99,Injury Prevention,Low,Previous Ankle Sprain,1-3 hours per week,Balanced Diet,Rehabilitation Facility,Joint Mobility Log,Fear of Recurrence
+100,Weight Loss,Moderate,None,3-5 hours per week,Keto Diet,Boxing Gym,Calorie Counting,Low Energy Levels
+101,Muscle Gain,High,None,5-7 hours per week,High Carb Diet,Powerlifting Gym,Strength Progression Log,Training Plateaus
+102,Endurance,High,Previous Stress Fracture,5-7 hours per week,Gluten-Free Diet,Swimming Pool,Lap Counting,Recovery After Injury
+103,Overall Health,Low,High Blood Pressure,1-3 hours per week,Heart-Healthy Diet,Senior Center,Medication Tracking,Family Medical History
+104,Flexibility,Low,Sciatica,1-3 hours per week,Balanced Diet,Pilates Studio,Pain Diary,Difficulty Sitting for Long Periods
+105,Core Strength,Moderate,None,3-5 hours per week,Low Calorie Diet,Bodyweight Fitness Park,Exercise Journal,Plateau in Progress
+106,Stress Relief,Moderate,Panic Attacks,3-5 hours per week,Mediterranean Diet,Mindfulness Retreat,Anxiety Journal,Work-Life Balance
+107,Athletic Performance,High,None,5-7 hours per week,Protein-Rich Diet,Sports Complex,Performance Metrics,Overtraining
+108,Weight Maintenance,Low,Hashimoto's Disease,1-3 hours per week,Balanced Diet,Community Fitness Center,Support Group,Slow Metabolism
+109,Injury Prevention,Low,Previous ACL Injury,1-3 hours per week,Low Fat Diet,Physical Therapy Center,Rehabilitation Log,Fear of Reinjury
+110,Weight Loss,Moderate,None,3-5 hours per week,Intermittent Fasting,Outdoor Bootcamp,Calorie Tracker,Lack of Time
+111,Muscle Gain,High,None,5-7 hours per week,Macrobiotic Diet,Strength Training Gym,Workout Log,Body Image Insecurities
+112,Endurance,Moderate,Previous Asthma,3-5 hours per week,High Protein Diet,Running Track,Heart Rate Monitor,Breathing Difficulties
+113,Overall Health,Low,Rheumatoid Arthritis,1-3 hours per week,Alkaline Diet,Senior Fitness Class,Joint Pain Diary,Medication Side Effects
+114,Flexibility,Low,Scoliosis,1-3 hours per week,Balanced Diet,Stretching Studio,Flexibility Tracker,Chronic Back Pain
+115,Core Strength,Moderate,None,3-5 hours per week,Whole Foods Diet,Home Workout Space,Bodyweight Exercises,Lack of Core Stability
+116,Stress Relief,Moderate,PTSD,3-5 hours per week,Balanced Diet,Mindfulness Center,Stress Journal,Lack of Sleep
+117,Athletic Performance,High,None,5-7 hours per week,Ketogenic Diet,Athletic Training Facility,Power Output Meter,Overtraining
+118,Weight Maintenance,Moderate,Polycystic Ovary Syndrome (PCOS),3-5 hours per week,Low Carb Diet,YMCA,Macro Tracking,Sugar Cravings
+119,Injury Prevention,Low,Previous Wrist Fracture,1-3 hours per week,Balanced Diet,Physical Therapy Clinic,Range of Motion Exercises,Fear of Reinjury
+120,Weight Loss,Moderate,PCOS,3-5 hours per week,Low Carb Diet,Outdoor Bootcamp,Calorie Tracker,Emotional Eating Triggers
+121,Muscle Gain,High,None,5-7 hours per week,High Protein Diet,Private Gym,Fitness App,Body Dysmorphia
+122,Endurance,Moderate,Previous ACL Tear,3-5 hours per week,Balanced Diet,Running Trails,GPS Watch,Knee Pain
+123,Overall Health,Low,Obesity,1-3 hours per week,Low Fat Diet,Senior Fitness Center,Doctor's Advice,Lack of Family Support
+124,Flexibility,Low,Herniated Disc,1-3 hours per week,Anti-Inflammatory Diet,Physical Therapy Studio,Range of Motion Testing,Chronic Pain Management
+125,Core Strength,Moderate,None,3-5 hours per week,High Fiber Diet,Group Fitness Classes,Progress Photos,Workout Plateaus
+126,Stress Relief,High,Burnout,5-7 hours per week,Balanced Diet,Mindfulness Studio,Stress Tracker,Work-Life Balance
+127,Athletic Performance,High,None,5-7 hours per week,Plant-Based Diet,Sports Arena,Coach/Trainer,Overtraining
+128,Weight Maintenance,Moderate,PCOS,3-5 hours per week,Low Glycemic Diet,Community Recreation Center,Portion Control,Weight Fluctuations
+129,Injury Prevention,Low,Previous Ankle Sprain,1-3 hours per week,Balanced Diet,Rehabilitation Facility,Joint Mobility Log,Fear of Recurrence
+130,Weight Loss,Moderate,None,3-5 hours per week,Keto Diet,Boxing Gym,Calorie Counting,Low Energy Levels
+131,Muscle Gain,High,None,5-7 hours per week,High Carb Diet,Powerlifting Gym,Strength Progression Log,Training Plateaus
+132,Endurance,High,Previous Stress Fracture,5-7 hours per week,Gluten-Free Diet,Swimming Pool,Lap Counting,Recovery After Injury
+133,Overall Health,Low,High Blood Pressure,1-3 hours per week,Heart-Healthy Diet,Senior Center,Medication Tracking,Family Medical History
+134,Flexibility,Low,Sciatica,1-3 hours per week,Balanced Diet,Pilates Studio,Pain Diary,Difficulty Sitting for Long Periods
+135,Core Strength,Moderate,None,3-5 hours per week,Low Calorie Diet,Bodyweight Fitness Park,Exercise Journal,Plateau in Progress
+136,Stress Relief,Moderate,Panic Attacks,3-5 hours per week,Mediterranean Diet,Mindfulness Retreat,Anxiety Journal,Work-Life Balance
+137,Athletic Performance,High,None,5-7 hours per week,Protein-Rich Diet,Sports Complex,Performance Metrics,Overtraining
+138,Weight Maintenance,Low,Hashimoto's Disease,1-3 hours per week,Balanced Diet,Community Fitness Center,Support Group,Slow Metabolism
+139,Injury Prevention,Low,Previous ACL Injury,1-3 hours per week,Low Fat Diet,Physical Therapy Center,Rehabilitation Log,Fear of Reinjury
+140,Weight Loss,Moderate,None,3-5 hours per week,Intermittent Fasting,Outdoor Bootcamp,Calorie Tracker,Lack of Time
+141,Muscle Gain,High,None,5-7 hours per week,Macrobiotic Diet,Strength Training Gym,Workout Log,Body Image Insecurities
+142,Endurance,Moderate,Previous Asthma,3-5 hours per week,High Protein Diet,Running Track,Heart Rate Monitor,Breathing Difficulties
+143,Overall Health,Low,Rheumatoid Arthritis,1-3 hours per week,Alkaline Diet,Senior Fitness Class,Joint Pain Diary,Medication Side Effects
+144,Flexibility,Low,Scoliosis,1-3 hours per week,Balanced Diet,Stretching Studio,Flexibility Tracker,Chronic Back Pain
+145,Core Strength,Moderate,None,3-5 hours per week,Whole Foods Diet,Home Workout Space,Bodyweight Exercises,Lack of Core Stability
+146,Stress Relief,Moderate,PTSD,3-5 hours per week,Balanced Diet,Mindfulness Center,Stress Journal,Lack of Sleep
+147,Athletic Performance,High,None,5-7 hours per week,Ketogenic Diet,Athletic Training Facility,Power Output Meter,Overtraining
+148,Weight Maintenance,Moderate,Polycystic Ovary Syndrome (PCOS),3-5 hours per week,Low Carb Diet,YMCA,Macro Tracking,Sugar Cravings
+149,Injury Prevention,Low,Previous Wrist Fracture,1-3 hours per week,Balanced Diet,Physical Therapy Clinic,Range of Motion Exercises,Fear of Reinjury
+150,Weight Loss,Moderate,PCOS,3-5 hours per week,Low Carb Diet,Outdoor Bootcamp,Calorie Tracker,Emotional Eating Triggers
+151,Muscle Gain,High,None,5-7 hours per week,High Protein Diet,Private Gym,Fitness App,Body Dysmorphia
+152,Endurance,Moderate,Previous ACL Tear,3-5 hours per week,Balanced Diet,Running Trails,GPS Watch,Knee Pain
+153,Overall Health,Low,Obesity,1-3 hours per week,Low Fat Diet,Senior Fitness Center,Doctor's Advice,Lack of Family Support
+154,Flexibility,Low,Herniated Disc,1-3 hours per week,Anti-Inflammatory Diet,Physical Therapy Studio,Range of Motion Testing,Chronic Pain Management
+155,Core Strength,Moderate,None,3-5 hours per week,High Fiber Diet,Group Fitness Classes,Progress Photos,Workout Plateaus
+156,Stress Relief,High,Burnout,5-7 hours per week,Balanced Diet,Mindfulness Studio,Stress Tracker,Work-Life Balance
+157,Athletic Performance,High,None,5-7 hours per week,Plant-Based Diet,Sports Arena,Coach/Trainer,Overtraining
+158,Weight Maintenance,Moderate,PCOS,3-5 hours per week,Low Glycemic Diet,Community Recreation Center,Portion Control,Weight Fluctuations
+159,Injury Prevention,Low,Previous Ankle Sprain,1-3 hours per week,Balanced Diet,Rehabilitation Facility,Joint Mobility Log,Fear of Recurrence
+160,Weight Loss,Moderate,None,3-5 hours per week,Keto Diet,Boxing Gym,Calorie Counting,Low Energy Levels
+161,Muscle Gain,High,None,5-7 hours per week,High Carb Diet,Powerlifting Gym,Strength Progression Log,Training Plateaus
+162,Endurance,High,Previous Stress Fracture,5-7 hours per week,Gluten-Free Diet,Swimming Pool,Lap Counting,Recovery After Injury
+163,Overall Health,Low,High Blood Pressure,1-3 hours per week,Heart-Healthy Diet,Senior Center,Medication Tracking,Family Medical History
+164,Flexibility,Low,Sciatica,1-3 hours per week,Balanced Diet,Pilates Studio,Pain Diary,Difficulty Sitting for Long Periods
+165,Core Strength,Moderate,None,3-5 hours per week,Low Calorie Diet,Bodyweight Fitness Park,Exercise Journal,Plateau in Progress
+166,Stress Relief,Moderate,Panic Attacks,3-5 hours per week,Mediterranean Diet,Mindfulness Retreat,Anxiety Journal,Work-Life Balance
+167,Athletic Performance,High,None,5-7 hours per week,Protein-Rich Diet,Sports Complex,Performance Metrics,Overtraining
+168,Weight Maintenance,Low,Hashimoto's Disease,1-3 hours per week,Balanced Diet,Community Fitness Center,Support Group,Slow Metabolism
+169,Injury Prevention,Low,Previous ACL Injury,1-3 hours per week,Low Fat Diet,Physical Therapy Center,Rehabilitation Log,Fear of Reinjury
+170,Weight Loss,Moderate,None,3-5 hours per week,Intermittent Fasting,Outdoor Bootcamp,Calorie Tracker,Lack of Time
+171,Muscle Gain,High,None,5-7 hours per week,Macrobiotic Diet,Strength Training Gym,Workout Log,Body Image Insecurities
+172,Endurance,Moderate,Previous Asthma,3-5 hours per week,High Protein Diet,Running Track,Heart Rate Monitor,Breathing Difficulties
+173,Overall Health,Low,Rheumatoid Arthritis,1-3 hours per week,Alkaline Diet,Senior Fitness Class,Joint Pain Diary,Medication Side Effects
+174,Flexibility,Low,Scoliosis,1-3 hours per week,Balanced Diet,Stretching Studio,Flexibility Tracker,Chronic Back Pain
+175,Core Strength,Moderate,None,3-5 hours per week,Whole Foods Diet,Home Workout Space,Bodyweight Exercises,Lack of Core Stability
+176,Stress Relief,Moderate,PTSD,3-5 hours per week,Balanced Diet,Mindfulness Center,Stress Journal,Lack of Sleep
+177,Athletic Performance,High,None,5-7 hours per week,Ketogenic Diet,Athletic Training Facility,Power Output Meter,Overtraining
+178,Weight Maintenance,Moderate,Polycystic Ovary Syndrome (PCOS),3-5 hours per week,Low Carb Diet,YMCA,Macro Tracking,Sugar Cravings
+179,Injury Prevention,Low,Previous Wrist Fracture,1-3 hours per week,Balanced Diet,Physical Therapy Clinic,Range of Motion Exercises,Fear of Reinjury
+180,Weight Loss,Moderate,PCOS,3-5 hours per week,Low Carb Diet,Outdoor Bootcamp,Calorie Tracker,Emotional Eating Triggers
+181,Muscle Gain,High,None,5-7 hours per week,High Protein Diet,Private Gym,Fitness App,Body Dysmorphia
+182,Endurance,Moderate,Previous ACL Tear,3-5 hours per week,Balanced Diet,Running Trails,GPS Watch,Knee Pain
+183,Overall Health,Low,Obesity,1-3 hours per week,Low Fat Diet,Senior Fitness Center,Doctor's Advice,Lack of Family Support
+184,Flexibility,Low,Herniated Disc,1-3 hours per week,Anti-Inflammatory Diet,Physical Therapy Studio,Range of Motion Testing,Chronic Pain Management
+185,Core Strength,Moderate,None,3-5 hours per week,High Fiber Diet,Group Fitness Classes,Progress Photos,Workout Plateaus
+186,Stress Relief,High,Burnout,5-7 hours per week,Balanced Diet,Mindfulness Studio,Stress Tracker,Work-Life Balance
+187,Athletic Performance,High,None,5-7 hours per week,Plant-Based Diet,Sports Arena,Coach/Trainer,Overtraining
+188,Weight Maintenance,Moderate,PCOS,3-5 hours per week,Low Glycemic Diet,Community Recreation Center,Portion Control,Weight Fluctuations
+189,Injury Prevention,Low,Previous Ankle Sprain,1-3 hours per week,Balanced Diet,Rehabilitation Facility,Joint Mobility Log,Fear of Recurrence
+190,Weight Loss,Moderate,None,3-5 hours per week,Keto Diet,Boxing Gym,Calorie Counting,Low Energy Levels
+191,Muscle Gain,High,None,5-7 hours per week,High Carb Diet,Powerlifting Gym,Strength Progression Log,Training Plateaus
+192,Endurance,High,Previous Stress Fracture,5-7 hours per week,Gluten-Free Diet,Swimming Pool,Lap Counting,Recovery After Injury
+193,Overall Health,Low,High Blood Pressure,1-3 hours per week,Heart-Healthy Diet,Senior Center,Medication Tracking,Family Medical History
+194,Flexibility,Low,Sciatica,1-3 hours per week,Balanced Diet,Pilates Studio,Pain Diary,Difficulty Sitting for Long Periods
+195,Core Strength,Moderate,None,3-5 hours per week,Low Calorie Diet,Bodyweight Fitness Park,Exercise Journal,Plateau in Progress
+196,Stress Relief,Moderate,Panic Attacks,3-5 hours per week,Mediterranean Diet,Mindfulness Retreat,Anxiety Journal,Work-Life Balance
+197,Athletic Performance,High,None,5-7 hours per week,Protein-Rich Diet,Sports Complex,Performance Metrics,Overtraining
+198,Weight Maintenance,Low,Hashimoto's Disease,1-3 hours per week,Balanced Diet,Community Fitness Center,Support Group,Slow Metabolism
+199,Injury Prevention,Low,Previous ACL Injury,1-3 hours per week,Low Fat Diet,Physical Therapy Center,Rehabilitation Log,Fear of Reinjury
+200,Weight Loss,Moderate,PCOS,3-5 hours per week,Low Carb Diet,Outdoor Bootcamp,Calorie Tracker,Emotional Eating Triggers
+201,Muscle Gain,High,None,5-7 hours per week,High Protein Diet,Private Gym,Fitness App,Body Dysmorphia
+202,Endurance,Moderate,Previous ACL Tear,3-5 hours per week,Balanced Diet,Running Trails,GPS Watch,Knee Pain
+203,Overall Health,Low,Obesity,1-3 hours per week,Low Fat Diet,Senior Fitness Center,Doctor's Advice,Lack of Family Support
+204,Flexibility,Low,Herniated Disc,1-3 hours per week,Anti-Inflammatory Diet,Physical Therapy Studio,Range of Motion Testing,Chronic Pain Management
+205,Core Strength,Moderate,None,3-5 hours per week,High Fiber Diet,Group Fitness Classes,Progress Photos,Workout Plateaus
+206,Stress Relief,High,Burnout,5-7 hours per week,Balanced Diet,Mindfulness Studio,Stress Tracker,Work-Life Balance
+207,Athletic Performance,High,None,5-7 hours per week,Plant-Based Diet,Sports Arena,Coach/Trainer,Overtraining
+208,Weight Maintenance,Moderate,PCOS,3-5 hours per week,Low Glycemic Diet,Community Recreation Center,Portion Control,Weight Fluctuations
+209,Injury Prevention,Low,Previous Ankle Sprain,1-3 hours per week,Balanced Diet,Rehabilitation Facility,Joint Mobility Log,Fear of Recurrence
+210,Weight Loss,Moderate,None,3-5 hours per week,Keto Diet,Boxing Gym,Calorie Counting,Low Energy Levels
+211,Muscle Gain,High,None,5-7 hours per week,High Carb Diet,Powerlifting Gym,Strength Progression Log,Training Plateaus
+212,Endurance,High,Previous Stress Fracture,5-7 hours per week,Gluten-Free Diet,Swimming Pool,Lap Counting,Recovery After Injury
+213,Overall Health,Low,High Blood Pressure,1-3 hours per week,Heart-Healthy Diet,Senior Center,Medication Tracking,Family Medical History
+214,Flexibility,Low,Sciatica,1-3 hours per week,Balanced Diet,Pilates Studio,Pain Diary,Difficulty Sitting for Long Periods
+215,Core Strength,Moderate,None,3-5 hours per week,Low Calorie Diet,Bodyweight Fitness Park,Exercise Journal,Plateau in Progress
+216,Stress Relief,Moderate,Panic Attacks,3-5 hours per week,Mediterranean Diet,Mindfulness Retreat,Anxiety Journal,Work-Life Balance
+217,Athletic Performance,High,None,5-7 hours per week,Protein-Rich Diet,Sports Complex,Performance Metrics,Overtraining
+218,Weight Maintenance,Low,Hashimoto's Disease,1-3 hours per week,Balanced Diet,Community Fitness Center,Support Group,Slow Metabolism
+219,Injury Prevention,Low,Previous ACL Injury,1-3 hours per week,Low Fat Diet,Physical Therapy Center,Rehabilitation Log,Fear of Reinjury
+220,Weight Loss,Moderate,PCOS,3-5 hours per week,Low Carb Diet,Outdoor Bootcamp,Calorie Tracker,Emotional Eating Triggers
+221,Muscle Gain,High,None,5-7 hours per week,High Protein Diet,Private Gym,Fitness App,Body Dysmorphia
+222,Endurance,Moderate,Previous ACL Tear,3-5 hours per week,Balanced Diet,Running Trails,GPS Watch,Knee Pain
+223,Overall Health,Low,Obesity,1-3 hours per week,Low Fat Diet,Senior Fitness Center,Doctor's Advice,Lack of Family Support
+224,Flexibility,Low,Herniated Disc,1-3 hours per week,Anti-Inflammatory Diet,Physical Therapy Studio,Range of Motion Testing,Chronic Pain Management
+225,Core Strength,Moderate,None,3-5 hours per week,High Fiber Diet,Group Fitness Classes,Progress Photos,Workout Plateaus
+226,Stress Relief,High,Burnout,5-7 hours per week,Balanced Diet,Mindfulness Studio,Stress Tracker,Work-Life Balance
+227,Athletic Performance,High,None,5-7 hours per week,Plant-Based Diet,Sports Arena,Coach/Trainer,Overtraining
+228,Weight Maintenance,Moderate,PCOS,3-5 hours per week,Low Glycemic Diet,Community Recreation Center,Portion Control,Weight Fluctuations
+229,Injury Prevention,Low,Previous Ankle Sprain,1-3 hours per week,Balanced Diet,Rehabilitation Facility,Joint Mobility Log,Fear of Recurrence
+230,Weight Loss,Moderate,None,3-5 hours per week,Keto Diet,Boxing Gym,Calorie Counting,Low Energy Levels
+231,Muscle Gain,High,None,5-7 hours per week,High Carb Diet,Powerlifting Gym,Strength Progression Log,Training Plateaus
+232,Endurance,High,Previous Stress Fracture,5-7 hours per week,Gluten-Free Diet,Swimming Pool,Lap Counting,Recovery After Injury
+233,Overall Health,Low,High Blood Pressure,1-3 hours per week,Heart-Healthy Diet,Senior Center,Medication Tracking,Family Medical History
+234,Flexibility,Low,Sciatica,1-3 hours per week,Balanced Diet,Pilates Studio,Pain Diary,Difficulty Sitting for Long Periods
+235,Core Strength,Moderate,None,3-5 hours per week,Low Calorie Diet,Bodyweight Fitness Park,Exercise Journal,Plateau in Progress
+236,Stress Relief,Moderate,Panic Attacks,3-5 hours per week,Mediterranean Diet,Mindfulness Retreat,Anxiety Journal,Work-Life Balance
+237,Athletic Performance,High,None,5-7 hours per week,Protein-Rich Diet,Sports Complex,Performance Metrics,Overtraining
+238,Weight Maintenance,Low,Hashimoto's Disease,1-3 hours per week,Balanced Diet,Community Fitness Center,Support Group,Slow Metabolism
+239,Injury Prevention,Low,Previous ACL Injury,1-3 hours per week,Low Fat Diet,Physical Therapy Center,Rehabilitation Log,Fear of Reinjury
+240,Weight Loss,Moderate,PCOS,3-5 hours per week,Low Carb Diet,Outdoor Bootcamp,Calorie Tracker,Emotional Eating Triggers
+241,Muscle Gain,High,None,5-7 hours per week,High Protein Diet,Private Gym,Fitness App,Body Dysmorphia
+242,Endurance,Moderate,Previous ACL Tear,3-5 hours per week,Balanced Diet,Running Trails,GPS Watch,Knee Pain
+243,Overall Health,Low,Obesity,1-3 hours per week,Low Fat Diet,Senior Fitness Center,Doctor's Advice,Lack of Family Support
+244,Flexibility,Low,Herniated Disc,1-3 hours per week,Anti-Inflammatory Diet,Physical Therapy Studio,Range of Motion Testing,Chronic Pain Management
+245,Core Strength,Moderate,None,3-5 hours per week,High Fiber Diet,Group Fitness Classes,Progress Photos,Workout Plateaus
+246,Stress Relief,High,Burnout,5-7 hours per week,Balanced Diet,Mindfulness Studio,Stress Tracker,Work-Life Balance
+247,Athletic Performance,High,None,5-7 hours per week,Plant-Based Diet,Sports Arena,Coach/Trainer,Overtraining
+248,Weight Maintenance,Moderate,PCOS,3-5 hours per week,Low Glycemic Diet,Community Recreation Center,Portion Control,Weight Fluctuations
+249,Injury Prevention,Low,Previous Ankle Sprain,1-3 hours per week,Balanced Diet,Rehabilitation Facility,Joint Mobility Log,Fear of Recurrence
+250,Weight Loss,Moderate,None,3-5 hours per week,Keto Diet,Boxing Gym,Calorie Counting,Low Energy Levels
+251,Muscle Gain,High,None,5-7 hours per week,High Carb Diet,Powerlifting Gym,Strength Progression Log,Training Plateaus
+252,Endurance,High,Previous Stress Fracture,5-7 hours per week,Gluten-Free Diet,Swimming Pool,Lap Counting,Recovery After Injury
+253,Overall Health,Low,High Blood Pressure,1-3 hours per week,Heart-Healthy Diet,Senior Center,Medication Tracking,Family Medical History
+254,Flexibility,Low,Sciatica,1-3 hours per week,Balanced Diet,Pilates Studio,Pain Diary,Difficulty Sitting for Long Periods
+255,Core Strength,Moderate,None,3-5 hours per week,Low Calorie Diet,Bodyweight Fitness Park,Exercise Journal,Plateau in Progress
+256,Stress Relief,Moderate,Panic Attacks,3-5 hours per week,Mediterranean Diet,Mindfulness Retreat,Anxiety Journal,Work-Life Balance
+257,Athletic Performance,High,None,5-7 hours per week,Protein-Rich Diet,Sports Complex,Performance Metrics,Overtraining
+258,Weight Maintenance,Low,Hashimoto's Disease,1-3 hours per week,Balanced Diet,Community Fitness Center,Support Group,Slow Metabolism
+259,Injury Prevention,Low,Previous ACL Injury,1-3 hours per week,Low Fat Diet,Physical Therapy Center,Rehabilitation Log,Fear of Reinjury
+260,Weight Loss,Moderate,PCOS,3-5 hours per week,Low Carb Diet,Outdoor Bootcamp,Calorie Tracker,Emotional Eating Triggers
+261,Muscle Gain,High,None,5-7 hours per week,High Protein Diet,Private Gym,Fitness App,Body Dysmorphia
+262,Endurance,Moderate,Previous ACL Tear,3-5 hours per week,Balanced Diet,Running Trails,GPS Watch,Knee Pain
+263,Overall Health,Low,Obesity,1-3 hours per week,Low Fat Diet,Senior Fitness Center,Doctor's Advice,Lack of Family Support
+264,Flexibility,Low,Herniated Disc,1-3 hours per week,Anti-Inflammatory Diet,Physical Therapy Studio,Range of Motion Testing,Chronic Pain Management
+265,Core Strength,Moderate,None,3-5 hours per week,High Fiber Diet,Group Fitness Classes,Progress Photos,Workout Plateaus

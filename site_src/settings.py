@@ -62,6 +62,8 @@ INSTALLED_APPS = [
 
     # django hitcount
     'hitcount',
+
+    'formtools',
 ]
 
 MIDDLEWARE = [

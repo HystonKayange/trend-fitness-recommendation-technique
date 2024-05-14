@@ -1,0 +1,109 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+{% load static %}
+{% load account socialaccount %}
+
+{% block head_title %}{% trans "Personalization" %}{% endblock %}
+
+{% block content %}
+<style>
+    body{
+        background: url('{% static "img/2.jpeg"%}');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--black);
+    }
+
+    .processing_bg {
+        position: absolute;
+        z-index: 9999999;
+        background: var(--black);
+        width: 100%;
+        height: 100%;
+    }
+
+    .processing {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .processing img {
+        width: 80px;
+        animation: fadeImg 2s linear infinite;
+    }
+
+
+    .show{
+        display: block;
+        transition: 1s display ease-in-out;
+    }
+</style>
+
+<div class="login-box mt-5 mb-3">
+    
+
+  <div class="card" width="500">
+    <div class="processing_bg hidden-item" id="processing">
+        <div class="processing">
+          <img src="{% static 'img/logo.jpeg' %}" alt="loading" />
+        </div>
+    </div>
+    
+    
+    <div class="mb-3 text-center">
+      <div class="mt-4">
+        <h3 class="fw-bold fs-h2 navy-blue">Personalization</h3>
+      </div>
+    </div>
+    <div class="card-body">
+          
+  <p class="login-box-msg">Welcome to TrendFitness, please fill out the form below to Personalize your profile</p>
+  <form method="post" enctype="multipart/form-data"  novalidate="" class="needs-validation" id="form-signin"> {% csrf_token %}
+    {% if redirect_field_value %}
+    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+    {% endif %}
+    <p>Step {{ wizard.steps.step1 }} of {{ wizard.steps.count }}</p>
+
+    <p class="form-text error-text text-danger">
+      {{ form.non_field_errors.as_text }}
+    </p>
+    <div class="d-grid">
+        {{ wizard.management_form }}
+        {% if wizard.form.forms %}
+            {{ wizard.form.management_form }}
+            {% for form in wizard.form.forms %}
+                {{ form.as_table }}
+            {% endfor %}
+        {% else %}
+            {{ wizard.form }}
+        {% endif %}
+        </table>
+        {% if wizard.steps.prev %}
+        <button name="wizard_goto_step" type="submit" class="btn btn-danger fw-bolder btn-block" value="{{ wizard.steps.first }}">{% translate "first step" %}</button>
+        <button name="wizard_goto_step" type="submit" class="btn btn-danger fw-bolder btn-block" value="{{ wizard.steps.prev }}">{% translate "prev step" %}</button>
+        {% endif %}
+        <input type="submit" class="btn btn-danger fw-bolder btn-block" value="{% translate "submit" %}"/>
+    </div>
+
+   
+  </form>
+
+      </div>
+  </div>
+</div>
+
+
+<script src="{% static 'js/form-validation.js' %}"></script>
+<script src="{% static 'js/preloader.js' %}"></script>
+
+
+
+
+{% endblock %}

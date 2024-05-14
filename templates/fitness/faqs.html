@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load humanize %}
+{% load hitcount_tags %}
+{% block head_title %}FAQs{% endblock %}
+{% block content %}
+
+	<style>
+        body, .accordion-body{
+			background: var(--black);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-color: var(--black);
+			color: var(--yello);
+		}
+		body::before {
+			content: '';
+			background: none;
+			background-size: cover;
+		}
+		.accordion-item h2{
+			font-size:20px;
+		}
+	</style>
+	<main style="overflow: hidden;" >
+		<div class="row justify-content-center container mt-5 mb-5">
+            <div class="col-md-6 d-md-none mb-4">
+                <div class="container">
+                    <img class="w-100" src="{% static 'images/1.jpg' %}" alt="">
+                </div>
+            </div>
+			<div class="col-md-8">
+                <div class="container">
+                    <h2 class="fw-bold mb-5 h1">Frequently Asked Questions</h2>
+                </div>
+				<div class="accordion" id="accordionPanelsStayOpenExample">
+					{% for faq in faq_content %}
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="panelsStayOpen-heading{{forloop.counter}}">
+								<button class="accordion-button bg-yellow fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse{{forloop.counter}}" aria-expanded="true" aria-controls="panelsStayOpen-collapse{{forloop.counter}}">
+								{{faq.title}}
+								</button>
+							</h2>
+							<div id="panelsStayOpen-collapse{{forloop.counter}}" class="accordion-collapse collapse {% if forloop.counter == 1 %}show{% endif %}" aria-labelledby="panelsStayOpen-heading{{forloop.counter}}">
+								<div class="accordion-body">
+									{{faq.content}}
+								</div>
+							</div>
+						</div>
+					{% endfor %}
+				  </div>
+			</div>
+
+		</div>
+		<div>
+			
+		
+		</div>
+	</main>
+  
+  
+{% endblock %}

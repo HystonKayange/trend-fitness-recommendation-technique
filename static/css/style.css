@@ -29,6 +29,32 @@ ul{
     /* border-color: #4b545c; */
     --bs-navbar-toggler-border-color: none !important;
 }
+
+#search div{
+    position: absolute;
+    width: 95%;
+    padding-right: 10px;
+}
+
+#search div input{
+    position: relative;
+    width: 100%;
+}
+#search div button{
+    position: absolute;
+    left:90%;
+    z-index: 2;
+    color: var(--black);
+}
+#search div i:hover{
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bolder;
+}
+.login-logo picture img{
+    width: 200px;
+}
+
 /*AUTHENTICATION*/
 .login-box, .card{
     background: var(--black) !important;
@@ -85,4 +111,17 @@ ul{
 /*FOOTER SECTION*/
 footer{
     border-top: .5px solid var(--grey);
+}
+
+.modal{
+    animation: Fadeobj .5s ease-in-out;
+}
+
+@keyframes Fadeobj {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }

@@ -7,12 +7,11 @@
 						<div class="nav_head ms-auto">
 							<ul class="me-auto mb-2 mb-lg-0">
 								<li class="nav-item mb-4">
-									<form action="" method="get" class="">
-										<div class="form-group row d-flex justify-content-center align-items-center">
-											<input type="text" name="q" id="q" class="form-control rounded-5 col-7" placeholder="Search">
-											<button class="btn btn-outline-danger d-none col-2"><i class="fa fa-search"></i></button>
-										</div>
-										
+									<form id="search" action="{% url 'fitness:search' %}" method="get" class="">
+										<div class="form-group d-flex justify-content-center align-items-center">
+											<input type="text" name="q" id="q" class="form-control bg-yellow rounded-5" placeholder="Search" required>
+											<button type="submit" class="fas fa-search"></button>
+										</div>										
 									</form>
 								</li>
 								
@@ -26,6 +25,13 @@
 									<a class="navbar-brand ms-3" href="{% url 'blog:blog' %}">
 										<i class="fa-solid fa-blog me-2"></i>
 										Blog
+									</a>
+								</li>
+
+								<li class="nav-item mb-4">
+									<a class="navbar-brand ms-3" href="{% url 'product:product' %}">
+										<i class="fa-solid fa-blog me-2"></i>
+										Product
 									</a>
 								</li>
 

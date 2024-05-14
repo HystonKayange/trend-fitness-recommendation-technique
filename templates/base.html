@@ -47,10 +47,67 @@
 
 
     <script src="{% static 'admin/js/vendor/jquery/jquery.js' %}"></script>
-    
+    <style>
+      .loader_bg {
+				position: fixed;
+				z-index: 9999999;
+				background: var(--black);
+				width: 100%;
+				height: 100%;
+			}
+
+			.loader {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.loader img {
+				width: 280px;
+        animation: fadeImg 2s linear infinite;
+			}
+			.hidden-item {
+				visibility: hidden;
+				opacity: 0;
+				transition: visibility 0s 1s, opacity 1s linear;
+			}
+			.show-hidden{
+				visibility: hidden;
+				opacity: 1;
+				transition: visibility 0s 1.5s, opacity 1.5s linear
+			}
+      @keyframes fadeImg {
+        0%{
+            opacity: 0;
+        }
+        15%{
+            opacity: .5;
+        }
+        50%{
+            opacity: 1;
+        }
+        75%{
+            opacity: .5;
+        }
+        100%{
+            opacity: 0;
+        }
+      }
+    </style>
 
   </head>
   <body class="" style="height:100vh">
+
+    <div class="loader_bg" id="loader">
+      <div class="loader">
+        <img src="{% static 'img/logo.jpeg' %}" alt="loading" />
+      </div>
+  </div>
 
    {% include 'snippets/header.html' %}
     {% include 'snippets/message.html' %}
@@ -60,6 +117,17 @@
    </div>
     {% include "snippets/footer.html" %}
     {% include "snippets/modal.html" %}
+    <!--==========JAVASCRIPT=========-->
+    <script>
+      window.addEventListener('load', ()=>{
+        setInterval(()=>{
+          document.querySelector("#loader").classList.add('hidden-item')
+          document.querySelector("#root").classList.remove('show-hidden')
+        }, 3000)
+
+      })
+    </script>
+  
 
 	<script src="{% static 'js/app.js' %}"></script>
 

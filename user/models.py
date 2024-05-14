@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, Permission
 from .managers import CustomUserManager
+from .utils import *
 
 
 # Create your models here.
@@ -36,3 +37,19 @@ class CustomUser(AbstractBaseUser):
         all_permissions = email_permissions
 
         return all_permissions
+
+
+class Profile(models.Model):
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, blank=False, null=True)
+    fitness_goal = models.CharField(max_length=100, choices=FITNESS_GOAL)
+    medical_history = models.CharField(max_length=100)
+    physical_activity_level = models.CharField(max_length=100, choices=PHYSICAL_ACTIVITY_LEVEL)
+    dietary_preferences = models.CharField(max_length=100)
+    fitness_environment = models.CharField(max_length=100, choices=FITNESS_ENVIRONMENT)
+    tracking_method = models.CharField(max_length=100, choices=TRACKING_METHOD)
+    time_commitment = models.CharField(max_length=100, choices=TIME_COMMITMENT)
+    challenges = models.TextField(max_length=100)
+    date = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return str(self.user.username)
