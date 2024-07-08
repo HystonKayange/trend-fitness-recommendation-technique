@@ -43,9 +43,14 @@
                         <a class="navbar-brand" href="{% url 'account_signup' %}">Sign up</a>
                     </li>
                     {% else %}
+                    {% if request.user.is_admin %}
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="/admin/">Admin</a>
+                    </li>
+                    {% endif %}
                     <li class="nav-item">
                         <a class="navbar-brand" href="{% url 'account_logout' %}">Logout</a>
-                    </li>
+                    </li>                    
                     {% endif %}
                     <li id="search_toggle" class="navbar-toggler nav_toggle_btn collapsed" type="button" data-bs-toggle="modal" data-bs-target="#nav-menu" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa fa-search"></i>

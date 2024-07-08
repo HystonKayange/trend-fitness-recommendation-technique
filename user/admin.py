@@ -8,9 +8,9 @@ class CustomUserAdmin(admin.ModelAdmin):
 
 
 class ProfileAdmin(admin.ModelAdmin):
-    list_display = ['user', 'fitness_goal', 'date']
-    list_filter = ['fitness_goal', 'tracking_method', 'time_commitment', 'fitness_environment',]
-    search_field = ['fitness_goal', 'tracking_method', 'time_commitment', 'fitness_environment',]
+    list_display = ['user', 'primary_fitness_goal', 'date']
+    list_filter = ['primary_fitness_goal', 'tracking_method', 'time_commitment', 'fitness_environment',]
+    search_field = ['primary_fitness_goal', 'tracking_method', 'time_commitment', 'fitness_environment',]
 
 
 admin.site.unregister(Group)

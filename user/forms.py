@@ -20,14 +20,14 @@ class RegistrationForm(SignupForm):
 
 class ProfileFormSection1(forms.ModelForm):
 
-    fitness_goal = forms.ChoiceField(choices=FITNESS_GOAL, widget=forms.RadioSelect())
+    primary_fitness_goal = forms.ChoiceField(choices=FITNESS_GOAL, widget=forms.RadioSelect())
     physical_activity_level = forms.ChoiceField(choices=PHYSICAL_ACTIVITY_LEVEL, widget=forms.RadioSelect())
     fitness_environment = forms.ChoiceField(choices=FITNESS_ENVIRONMENT, widget=forms.RadioSelect())
 
 
     class Meta:
         model = Profile
-        fields = ('fitness_goal', 'medical_history', 'dietary_preferences', 'physical_activity_level')
+        fields = ('primary_fitness_goal', 'medical_history', 'nutritional_preferences', 'physical_activity_level')
 
 
 class ProfileFormSection2(forms.ModelForm):

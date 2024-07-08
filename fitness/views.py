@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.http import JsonResponse
 from operator import attrgetter
 from django.db.models import Q
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
@@ -6,6 +7,8 @@ from operator import attrgetter
 from product.models import Product, Tag
 from blog.models import BlogPost, Category
 from .models import TopSearch, FrequentlyAskedQuestion
+from .utils import RecommendationSystem, load_user_profiles
+from user.models import Profile
 
 
 def index_view(request):
@@ -122,3 +125,26 @@ def faq_views(request):
         'faq_content': FrequentlyAskedQuestion.objects.all(),
     }
     return render(request, "fitness/faqs.html", context)
+
+
+def recommendation_view(request):
+    if request.user.is_authenticated:
+        user_id = Profile.objects.get(user=request.user)
+        df = load_user_profiles()
+        if 'Id' not in df.columns:
+            return JsonResponse({'error': 'Invalid data format'}, status=400)
+            
+        recommender = RecommendationSystem(df)
+        collaborative_recommendations = recommender.collaborative_filtering(user_id, num_recommendations=5)
+        content_based_recommendations = recommender.content_based_filtering(user_id, num_recommendations=5)
+        
+        context = {
+            'collaborative_nutritional': collaborative_recommendations['Nutritional Preferences'],
+            'collaborative_fitness': collaborative_recommendations['Fitness Environment'],
+            'content_nutritional': content_based_recommendations['Nutritional Preferences'],
+            'content_fitness': content_based_recommendations['Fitness Environment'],
+        }
+        return render(request, "fitness/recommendation.html", context)
+        
+    else:
+        return redirect('account_login')
